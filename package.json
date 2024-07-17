@@ -1,17 +1,23 @@
 {
-  "name": "interviewlyV0",
+  "name": "flowbite-meteor-starter",
   "private": true,
   "scripts": {
-    "start": "meteor run",
+    "dev": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
-    "@babel/runtime": "^7.23.5",
-    "meteor-node-stubs": "^1.2.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@babel/runtime": "^7.24.8",
+    "autoprefixer": "^10.4.16",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.6.4",
+    "meteor-node-stubs": "^1.2.5",
+    "postcss": "^8.4.31",
+    "postcss-load-config": "^4.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.3.3"
   },
   "meteor": {
     "mainModule": {
@@ -19,5 +25,13 @@
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.23",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.3"
   }
 }
